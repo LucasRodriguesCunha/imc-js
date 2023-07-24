@@ -97,9 +97,95 @@ h1::after {
     outline: none;
 }
 
-.calcular {
+#calcular {
     border: none;
     font-size: 1.25rem;
     font-weight: bold;
     background-color: #185281;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+
+#calcular:hover {
+    transition: ease 0.4s;
+    background-color: #f8fafc;
+    color: #185281;
+}
+
+#resultado {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+
+#imc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.2rem;
+}
+
+#imc span:last-child {
+    font-size: 0.875rem;
+    color: #cbd5e1;
+}
+
+#desc {
+    width: 15.5rem;
+}
+
+#mais_infos {
+    border-top: 1px solid #ffffff34;
+    padding-top: 1.5rem;
+}
+
+#mais_infos a {
+    color: #185281;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+#mais_infos a:hover {
+    color: #cbd5e1;
+}
+
+.oculto {
+    display: none;
+}
+
+.normal {
+    display: none;
+}
+
+.atencao {
+    color: #dc2626;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    #container {
+        gap: 0.1rem;
+    }
+
+    #calculadora {
+        padding: 1rem;
+    }
 }
